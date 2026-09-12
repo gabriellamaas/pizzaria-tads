@@ -1,0 +1,520 @@
+/* ==================================================
+   SUPER PIZZA - DESAFIO 2
+   HTML5 + CSS3 + JavaScript puro
+   ================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+/* CABEÇALHO */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 72px;
+  padding: 7px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #b71924;
+}
+
+.logo {
+  width: 125px;
+  height: 58px;
+  padding: 3px 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+  height: 590px;
+  margin-top: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("assets/img/pizza.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-texto {
+  padding: 18px 28px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+/* BENEFÍCIOS */
+
+.beneficios {
+  padding: 38px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.beneficios h2 {
+  margin-bottom: 10px;
+}
+
+.cards {
+  max-width: 650px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.card i {
+  margin-bottom: 10px;
+  color: #b71924;
+  font-size: 27px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* SABORES */
+
+.sabores {
+  padding: 32px 20px;
+  text-align: center;
+  background-color: #fff0d7;
+}
+
+.sabores h2 {
+  margin-bottom: 12px;
+}
+
+.lista-sabores {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.lista-sabores span {
+  padding: 9px 17px;
+  border-radius: 20px;
+
+  background-color: #f6cf8b;
+  color: #333;
+
+  font-size: 14px;
+}
+
+/* DEPOIMENTOS */
+
+.depoimentos {
+  padding: 38px 20px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.depoimentos h2 {
+  margin-bottom: 10px;
+}
+
+.foto-cliente {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 12px;
+
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.foto-cliente img {
+  width: 100%;
+  height: 150px;
+
+  object-fit: cover;
+  object-position: center top;
+}
+
+.depoimentos p {
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.botoes-depoimento button {
+  padding: 8px 11px;
+  margin: 0 3px;
+
+  border: none;
+  border-radius: 4px;
+
+  color: #fff;
+  background-color: #b71924;
+
+  font-size: 12px;
+}
+
+/* FORMULÁRIO */
+
+.pedido {
+  padding: 35px 20px 45px;
+  border-top: 3px solid #b71924;
+  background-color: #fff;
+}
+
+.pedido h2 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+form > label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+  width: 100%;
+  height: 44px;
+  margin-bottom: 13px;
+  padding: 0 12px;
+
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+
+  background-color: #fff;
+  color: #333;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+fieldset {
+  margin: 18px 0;
+  border: none;
+}
+
+legend {
+  margin-bottom: 10px;
+
+  color: #b71924;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.opcoes {
+  min-height: 46px;
+  padding: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+
+  background-color: #fafafa;
+}
+
+.opcoes label {
+  font-size: 14px;
+}
+
+.enviar {
+  width: 100%;
+  height: 44px;
+
+  border: none;
+  border-radius: 4px;
+
+  color: #fff;
+  background-color: #22aa55;
+
+  font-weight: bold;
+}
+
+/* RODAPÉ */
+
+footer {
+  position: relative;
+
+  min-height: 105px;
+  padding: 18px 20px;
+
+  color: #fff;
+  background-color: #222;
+
+  text-align: center;
+}
+
+.redes p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.redes a {
+  margin: 0 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.copyright {
+  margin-top: 7px;
+  font-size: 13px;
+}
+
+.projeto {
+  position: absolute;
+  left: 9px;
+  bottom: 9px;
+
+  padding: 5px 8px;
+  border-radius: 4px;
+
+  background-color: #111;
+  font-size: 11px;
+}
+
+/* RESPONSIVIDADE - TABLET */
+
+@media (max-width: 768px) {
+
+  html {
+    scroll-padding-top: 115px;
+  }
+
+  header {
+    height: 110px;
+    padding: 8px 18px;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .logo {
+    width: 105px;
+    height: 50px;
+  }
+
+  nav {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    height: 480px;
+    margin-top: 110px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-texto {
+    margin: 0 20px;
+  }
+
+  .cards {
+    max-width: 500px;
+  }
+
+  .card {
+    flex: 1;
+  }
+}
+
+/* RESPONSIVIDADE - CELULAR */
+
+@media (max-width: 480px) {
+
+  html {
+    scroll-padding-top: 125px;
+  }
+
+  header {
+    height: 120px;
+  }
+
+  nav {
+    gap: 8px 12px;
+  }
+
+  .hero {
+    height: 410px;
+    margin-top: 120px;
+  }
+
+  .hero-texto {
+    padding: 14px 16px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .opcoes {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  footer {
+    padding-bottom: 55px;
+  }
+
+  .projeto {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+/* PÁGINA DE AGRADECIMENTO */
+
+.pagina-obrigado {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  background-color: #fff0d7;
+}
+
+.agradecimento {
+  width: 100%;
+  max-width: 500px;
+  padding: 35px 25px;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+  background-color: #fff;
+  text-align: center;
+}
+
+.agradecimento img {
+  width: 150px;
+  margin: 0 auto 20px;
+}
+
+.agradecimento h1 {
+  margin-bottom: 10px;
+  color: #b71924;
+  font-size: 27px;
+}
+
+.agradecimento p {
+  margin-bottom: 22px;
+}
+
+.agradecimento a {
+  display: inline-block;
+  padding: 10px 16px;
+
+  border-radius: 4px;
+
+  color: #fff;
+  background-color: #b71924;
+
+  text-decoration: none;
+  font-weight: bold;
+}

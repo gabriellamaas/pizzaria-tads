@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Super Pizza</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <!-- Ícones permitidos pela atividade -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+</head>
+
+<body>
+
+  <!-- Cabeçalho fixo -->
+  <header>
+    <a href="#inicio" class="logo">
+      <img src="assets/img/logo.png" alt="Logo Super Pizza">
+    </a>
+
+    <nav>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#sabores">Sabores</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#pedido">Peça já</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h1>A pizza quentinha que chega até você!</h1>
+      </div>
+    </section>
+
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="beneficios">
+      <h2>Por que escolher nossa pizzaria?</h2>
+
+      <div class="cards">
+        <article class="card">
+          <i class="fa-solid fa-pizza-slice"></i>
+          <p>Ingredientes frescos</p>
+        </article>
+
+        <article class="card">
+          <i class="fa-solid fa-motorcycle"></i>
+          <p>Entrega rápida</p>
+        </article>
+
+        <article class="card">
+          <i class="fa-solid fa-heart"></i>
+          <p>Sabor inigualável</p>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- Sabores -->
+    <section id="sabores" class="sabores">
+      <h2>Nossos Sabores</h2>
+
+      <div class="lista-sabores">
+        <span>Calabresa</span>
+        <span>Margherita</span>
+        <span>Frango com Catupiry</span>
+        <span>Portuguesa</span>
+        <span>Vegetariana</span>
+      </div>
+    </section>
+
+
+    <!-- Carrossel de depoimentos -->
+    <section id="depoimentos" class="depoimentos">
+      <h2>O que nossos clientes dizem</h2>
+
+      <div class="foto-cliente">
+        <img
+          id="foto-depoimento"
+          src="assets/img/cliente-joao.png"
+          alt="João, cliente da Super Pizza"
+        >
+      </div>
+
+      <p id="texto-depoimento">"Entrega super rápida, recomendo demais!" – João</p>
+
+      <div class="botoes-depoimento">
+        <button type="button" id="btn-anterior">Anterior</button>
+        <button type="button" id="btn-proximo">Próximo</button>
+      </div>
+    </section>
+
+
+    <!-- Formulário -->
+    <section id="pedido" class="pedido">
+      <h2>Peça já a sua pizza!</h2>
+
+      <form id="form-pedido" action="obrigado.html" method="get" novalidate>
+
+        <label for="nome">Nome completo</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Nome completo"
+          required
+        >
+
+        <label for="telefone">Telefone</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          placeholder="Telefone"
+          required
+        >
+
+        <label for="endereco">Endereço de entrega</label>
+        <input
+          type="text"
+          id="endereco"
+          name="endereco"
+          placeholder="Endereço de entrega"
+          required
+        >
+
+        <label for="sabor">Escolha o sabor</label>
+        <select id="sabor" name="sabor" required>
+          <option value="">Escolha o sabor</option>
+          <option value="calabresa">Calabresa</option>
+          <option value="margherita">Margherita</option>
+          <option value="frango-catupiry">Frango com Catupiry</option>
+          <option value="portuguesa">Portuguesa</option>
+          <option value="vegetariana">Vegetariana</option>
+        </select>
+
+        <fieldset>
+          <legend>Forma de pagamento:</legend>
+
+          <div class="opcoes">
+            <label>
+              <input type="radio" name="pagamento" value="dinheiro" required>
+              Dinheiro
+            </label>
+
+            <label>
+              <input type="radio" name="pagamento" value="cartao">
+              Cartão
+            </label>
+
+            <label>
+              <input type="radio" name="pagamento" value="pix">
+              PIX
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Adicionais:</legend>
+
+          <div class="opcoes">
+            <label>
+              <input type="checkbox" name="borda" value="sim">
+              Borda recheada
+            </label>
+
+            <label>
+              <input type="checkbox" name="bebida" value="sim">
+              Bebida
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="enviar">Enviar Pedido</button>
+      </form>
+    </section>
+
+  </main>
+
+
+  <!-- Rodapé -->
+  <footer>
+    <p class="projeto">Projeto - Pizzaria (TADS)</p>
+
+    <div class="redes">
+      <p>Siga-nos nas redes sociais</p>
+
+      <a href="#" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="#" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <a href="#" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <p class="copyright">© 2026 Super Pizza</p>
+  </footer>
+
+</body>
+</html>
