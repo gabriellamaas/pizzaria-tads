@@ -14,13 +14,13 @@ const depoimentos = [
   },
   {
     texto: '"A pizza chegou quentinha e muito saborosa!" – Maria',
-    foto: 'assets/img/cliente-joao.png',
-    alt: 'Cliente da Super Pizza'
+    foto: 'assets/img/cliente-maria.png',
+    alt: 'Maria, cliente da Super Pizza'
   },
   {
     texto: '"Ótimo atendimento e pedido entregue no horário." – Carlos',
-    foto: 'assets/img/cliente-joao.png',
-    alt: 'Cliente da Super Pizza'
+    foto: 'assets/img/cliente-carlos.png',
+    alt: 'Carlos, cliente da Super Pizza'
   }
 ];
 

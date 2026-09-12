@@ -199,10 +199,10 @@ nav a {
 
 .foto-cliente img {
   width: 100%;
-  height: 150px;
+  height: 100%;
 
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
 }
 
 .depoimentos p {
